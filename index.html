@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>HTML-to-PDF Example</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="html2pdf.bundle.min.js"></script>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div id="invoice">
+        <h1 style="text-decoration:underline solid">Hello young padawan</h1>
+        <ul>
+            <li>
+                <p>If you click the button below </p>
+            </li>
+            <li>
+                <p>It will save your page as a PDF file</p>
+            </li>
+            <li>
+                <p>This is made possible by using the html2pdf library</p>
+            </li>
+            <li>
+                <p>Keep in mind the library has some limitations which only apply to this specific library and can be
+                    overcome by use of other libraries eg(pdfMake and pdfConverter)</p>
+            </li>
+        </ul>
+
+        <h3>The limitaions include</h3>
+
+        <ol>
+            <li>Only takes a "screenshot" of the page then renders it as a pdf</li>
+            <li>The file is sometimes blurry when zoomed in(overcame this by adding a custom function to set the size)
+            </li>
+            <li>File quality can be improved to png(using scripts) which results in a clearer and editable pdf file but
+                with huge file size </li>
+            <li>One jpg file eg(256kb) when downloaded in png form may be (28mb)</li>
+        </ol>
+
+        <h1>OKAY YOU CAN CLICK THE BUTTON NOW AND CONFIRM FOR YOURSELF</h1>
+    </div>
+    <button onclick="generatePDF()">Download as PDF</button>
+</body>
+
+</html>
